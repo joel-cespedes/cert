@@ -31,8 +31,97 @@
     .sub-header_menu {
         height: 100px;
         a.sub-header_i {
+            font-weight: 500;
             padding: 9px;
 
+        }
+    }
+}
+.section_about {
+    .about_left, .about_right {
+        width: 50%;
+    }
+    .about_right {
+        h2 .wrp_p, .wrap_cards, button {
+            margin-top: 3em ;
+        }
+    }
+    .about_left {
+        margin-left: -70px;
+        margin-right: 70px;
+    }
+}
+.about_right  .wrp_p {
+    margin-top: 3em ;
+
+}
+.wrap_cards {
+    display: flex;
+    justify-content: space-between;
+    .mini_card {
+        width: 42%;
+        display: flex;
+        background: var(--cert-secondary);
+        border-radius: 4px;
+        padding: 29px 10px 28px 30px;
+        position: relative;
+        position: relative;
+        overflow: hidden;
+        z-index: 44;
+        .img_mini_card {
+            width: 50px;
+            margin-right: 1em;
+        }
+        &:hover::before {
+            width: 180%;
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            top: 0px;
+            height: 100%;
+            left: -25%;
+            width: 0%;
+            background: #f3e7dd;
+            transform: skew(0deg);
+            transition-duration: .6s;
+            z-index: -1;
+        }
+    }
+}
+.cards_double {
+    display: flex;
+    justify-content: space-between;
+    .big_card {
+        width: 42%;
+        padding: 36px 39px 42px;
+        background: #E6EFFF;
+        justify-content: space-between;
+        position: relative;
+        .content_car {
+            width: 62%;
+            .btn_default{
+                margin-top: 1em;
+            }
+        }
+        .img_car {
+            width: 30%;
+        }
+        &:hover::before {
+            width: 180%;
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            top: 0px;
+            height: 100%;
+            left: -25%;
+            width: 0%;
+            background: var(--cert-primary-degrade);
+            transform: skew(50deg);
+            transition-duration: .6s;
+            z-index: -1;
         }
     }
 }

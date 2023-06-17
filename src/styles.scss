@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --cert-primary: #0c5adb;
+    --cert-secondary: #F8F8FF;
+    --cert-primary-light: rgb(51, 186, 255);
+    --cert-primary-dark: #2475FC;
+    --cert-primary-degrade: linear-gradient(to left, #2475FC, #1129B9 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-align {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, var(--cert-primary-dark), #1129B9 100%);
+    padding: 8px 31px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 44;
+    border-radius: 5px;
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+    }
+
+    &:hover::before {
+        width: 180%;
+    }
+
+    &:before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        height: 100%;
+        left: -25%;
+        width: 0%;
+        background: #00247E;
+        transform: skew(50deg);
+        transition-duration: .6s;
+        z-index: -1;
+    }
+}

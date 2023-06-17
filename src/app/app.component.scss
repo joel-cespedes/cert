@@ -1,0 +1,38 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    max-width: 1170px;
+}
+.line_up {
+    padding: 10px 0;
+    font-size: .86em;
+    color: white;
+    background-color: var(--cert-primary);
+    .line_up__item_left{
+        .line_up__item_left_i {
+            margin-right: 20px;
+        }
+    }
+    .line_up__item_right {
+        .line_up__item_right_s {
+            width: 14px;
+            margin-left: 18px;
+            i[class^="gg-"] {
+                --ggs: 0.7;
+            }
+        }
+    }
+}
+.sub-header {
+    .sub-header_logo {
+        width: 180px;
+    }
+    .sub-header_menu {
+        height: 100px;
+        a.sub-header_i {
+            padding: 9px;
+
+        }
+    }
+}

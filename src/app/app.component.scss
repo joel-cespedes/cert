@@ -40,35 +40,119 @@
 
 .section_main {
     background-image: url(./../assets/img/main1.jpg);
-    padding: 4em 0 8em 0;
+    padding: 6em 0 12em 0;
     position: relative;
+    color: white;
 
     &:before {
         position: absolute;
         content: "";
         width: 100%;
         left: 0;
-        bottom: -5px;
+        bottom: -50px;
         height: 188px;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url(../assets/img/bg/wave_white.svg);
     }
 
+    .imgs {
+        position: absolute;
+    }
+
     .main_left {
-        width: 40%;
+        width: 45%;
+        margin-top: 6em;
+        position: relative;
+
+        span {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        h1 {
+            margin-top: .3em;
+            font-size: 4em;
+        }
+
+        .label {
+            margin-top: 1em;
+        }
+
+        .action_main {
+            margin-top: 2em;
+
+            a {
+                margin-left: 1em;
+                color: white;
+
+                .icon_call {
+                    width: 48px;
+                }
+
+                .label_call {
+                    margin-left: 1em;
+                }
+
+                .label_number {
+                    margin-top: 5px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .box3d {
+            bottom: -50px;
+            right: 0;
+            width: 50px;
+        }
     }
 
     .main_right {
         width: 50%;
+        position: relative;
 
         .box {
             margin-right: -20px;
         }
+
+
+
+        .img1 {
+            top: 139px;
+            left: 58px;
+        }
+
+        .img2 {
+            top: 339px;
+            right: 0;
+        }
+
+        .arrow {
+            top: 0px;
+            left: -150px;
+        }
     }
 }
 
+.section_arrow {
+    padding: 4em 0;
 
+    .title_small {
+        .iconcito {
+            width: 16px;
+            margin-right: 5px;
+        }
+    }
+
+    .title_arrow {
+        font-weight: 800;
+        font-size: 2.5em;
+        padding: 0 1em;
+        margin-right: 1em;
+        color: black;
+    }
+}
 
 .section_about {
     margin: 6em 0;
@@ -140,7 +224,17 @@
 .section_card {
     margin-top: 6em;
 
+    h3 {
+        text-align: center;
+        font-size: 2.5em;
+
+        span {
+            color: var(--cert-primary);
+        }
+    }
+
     .cards_double {
+        margin-top: 4em;
         display: flex;
         justify-content: space-between;
 

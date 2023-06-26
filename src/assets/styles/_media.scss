@@ -1,5 +1,265 @@
 @media screen and (max-width: 1260px) {
     .container {
-        padding: 0 10px;
+        padding: 0 18px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .section_menu_responsive {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .m_f_column {
+        flex-direction: column;
+
+        &>div {
+            width: 100% !important;
+        }
+    }
+
+    .m_f_column_rever {
+        flex-direction: column-reverse;
+
+        &>div {
+            width: 100% !important;
+        }
+    }
+
+    .sub-header_logo {
+        width: 160px !important;
+        padding-top: 6px;
+
+    }
+
+    .section_menu_responsive {
+        width: 100%;
+        position: relative;
+        box-shadow: 0 0 15px #6484ba;
+        position: relative;
+        z-index: 30;
+
+        .container_res {
+            background: var(--cert-primary);
+            padding: 0 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .icon_responsive {
+                color: white;
+                padding: 16px 0px 16px 20px;
+            }
+
+            .img_logo_white {
+                width: 140px;
+                padding: 8px 0;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .menu_responsive {
+            padding: 0 18px;
+            font-weight: 600;
+            box-sizing: border-box;
+            position: absolute;
+            left: 0;
+            top: 56px;
+            width: 100%;
+            background: white;
+            z-index: 22;
+        }
+
+    }
+
+
+
+    .menu_responsive {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+        .sub-header_i {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid rgb(231, 231, 231);
+        }
+    }
+
+    .section_main {
+        padding-top: 0 !important;
+        padding-bottom: 6em !important;
+
+        &::before {
+            height: 90px !important;
+        }
+
+        .main_left {
+            margin-top: 3em !important;
+        }
+
+        .imgs {
+            width: 250px;
+        }
+    }
+
+    .m_none {
+        display: none !important;
+    }
+
+
+
+    .order_responsive {
+        flex-direction: column;
+    }
+
+    .sub-header {
+        .container {
+            align-items: center;
+            justify-content: center;
+
+            .sub-header_logo {
+                margin: auto;
+            }
+        }
+    }
+
+    .sub-header_menu,
+    .line_up {
+        display: none !important;
+    }
+
+    .big_card {
+        flex-direction: column-reverse;
+        text-align: center;
+
+        .content_car {
+            width: 100% !important;
+        }
+
+        .img_car {
+            margin: auto;
+        }
+    }
+
+    .section_about {
+
+        .about_left {
+            margin: auto !important;
+        }
+
+
+        .about_right {
+            .mini_card {
+                margin-bottom: 1em;
+            }
+
+            button {
+                margin: 3em auto 0 auto !important;
+            }
+        }
+    }
+
+    .section_arrow {
+        .right_arrow {
+            margin-top: 2em;
+
+            .arrow {
+                width: 60%;
+            }
+        }
+
+    }
+
+    .section_blue {
+        padding: 5em 0 4em !important;
+        text-align: center;
+
+        .blue_title1 {
+            margin-bottom: 1em;
+        }
+    }
+
+    .section_fichas {
+        .wrap_fichas {
+            .item_ficha {
+                width: 48% !important;
+                padding: 35px 20px 15px 20px !important;
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    .section_form {
+        padding: 5em 18px 7em 18px;
+
+        .c_form {
+            padding: inherit;
+
+            .wrap_form {
+                .section_two {
+                    .input_form {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    footer {
+        .s_company {
+            text-align: center;
+
+            .f_logo {
+                margin: 0 auto;
+            }
+
+            .s_media {
+                justify-content: center;
+            }
+
+            margin-bottom: 2em;
+        }
+    }
+
+    .section_links {
+        .title_footer {
+            text-align: center;
+        }
+
+        .item_link {
+            justify-content: center;
+
+            .gg-arrow-right {
+                display: none;
+            }
+        }
+    }
+
+    .section_contact {
+        margin-top: 3em;
+
+        .title_footer {
+            text-align: center;
+        }
+
+        .item_contact {
+            justify-content: center;
+        }
+    }
+
+    .down_footer {
+        text-align: center;
+
+        .terms {
+            margin-top: 1em;
+        }
     }
 }

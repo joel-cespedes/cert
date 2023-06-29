@@ -41,9 +41,7 @@ export class HomeComponent implements OnInit {
   @ViewChild('itemFicha3', { static: true }) itemFicha3!: ElementRef<HTMLDivElement>
   @ViewChild('itemFicha4', { static: true }) itemFicha4!: ElementRef<HTMLDivElement>
 
-  constructor() {
-
-  }
+  constructor() {}
   ngOnInit(): void {}
 
 

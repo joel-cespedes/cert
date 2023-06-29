@@ -119,12 +119,12 @@
 
 <section class="section_about">
   <div class="container flex m_f_column">
-    <div class="about_left">
+    <div class="about_left" #aboutLeft>
       <div class="image_about">
         <img src="assets/img/resource/about1.png" alt="nosotros">
       </div>
     </div>
-    <div class="about_right">
+    <div class="about_right" #aboutRight>
       <h4 class="flex align-center"><i class="gg-path-front"></i> Sobre los certificados</h4>
       <h2>Negocio Top de Carlos</h2>
       <h3>Busca la ficha técnica</h3>
@@ -154,15 +154,15 @@
   </div>
 </section>
 <section class="section_arrow">
-  <div class="container flex flex-between align-center m_f_column">
-    <div>
+  <div class="container flex flex-between align-center m_f_column" >
+    <div #sectionArrow1>
       <div class="title_small flex">
         <div class="iconcito"><img src="assets/img/icon/iconcito.png" alt=""></div> Somos lo máximo
       </div>
       <div class="title_arrow">
         No jugamos carrito con nadie</div>
     </div>
-    <div class="right_arrow flex align-center">
+    <div class="right_arrow flex align-center" #sectionArrow2>
       <div class="arrow">
         <img src="assets/img/resource/arrow.png" alt="">
       </div>
@@ -202,7 +202,7 @@
   <div class="container">
     <h3>Características de fichas</h3>
     <div class="wrap_fichas flex flex-between">
-      <div class="item_ficha">
+      <div class="item_ficha" #itemFicha1>
         <div class="icon_ficha flex">
           <div class="box flex align-center">
             <i class="gg-database"></i>
@@ -213,7 +213,7 @@
           tempore magnam dolorum numquam dolore possimus necessitatibus est autem non, expedita iure, inventore,
           accusantium nihil!</p>
       </div>
-      <div class="item_ficha">
+      <div class="item_ficha" #itemFicha2>
         <div class="icon_ficha flex">
           <div class="box flex align-center">
             <i class="gg-atlasian"></i>
@@ -224,7 +224,7 @@
           tempore magnam dolorum numquam dolore possimus necessitatibus est autem non, expedita iure, inventore,
           accusantium nihil!</p>
       </div>
-      <div class="item_ficha">
+      <div class="item_ficha" #itemFicha3>
         <div class="icon_ficha flex">
           <div class="box flex align-center">
             <i class="gg-bell"></i>
@@ -235,7 +235,7 @@
           tempore magnam dolorum numquam dolore possimus necessitatibus est autem non, expedita iure, inventore,
           accusantium nihil!</p>
       </div>
-      <div class="item_ficha">
+      <div class="item_ficha" #itemFicha4>
         <div class="icon_ficha flex">
           <div class="box flex align-center">
             <i class="gg-userlane"></i>

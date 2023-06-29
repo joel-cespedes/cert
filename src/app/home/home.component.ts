@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { gsap, Linear, Power1 } from 'gsap';
+import { gsap, Linear, Power1, Expo } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { DropDownAnimation } from '../shared/animation';
 
@@ -30,33 +30,162 @@ export class HomeComponent implements OnInit {
   @ViewChild('img1', { static: true }) img1!: ElementRef<HTMLDivElement>
   @ViewChild('img2', { static: true }) img2!: ElementRef<HTMLDivElement>
   @ViewChild('circle_blue', { static: true }) circleBlue!: ElementRef<HTMLDivElement>
-  @ViewChild('cardSection', { static: true }) cardSection!: ElementRef<HTMLDivElement>
   @ViewChild('bigCard1', { static: true }) bigCard1!: ElementRef<HTMLDivElement>
   @ViewChild('bigCard2', { static: true }) bigCard2!: ElementRef<HTMLDivElement>
+  @ViewChild('aboutLeft', { static: true }) aboutLeft!: ElementRef<HTMLDivElement>
+  @ViewChild('aboutRight', { static: true }) aboutRight!: ElementRef<HTMLDivElement>
+  @ViewChild('sectionArrow1', { static: true }) sectionArrow1!: ElementRef<HTMLDivElement>
+  @ViewChild('sectionArrow2', { static: true }) sectionArrow2!: ElementRef<HTMLDivElement>
+  @ViewChild('itemFicha1', { static: true }) itemFicha1!: ElementRef<HTMLDivElement>
+  @ViewChild('itemFicha2', { static: true }) itemFicha2!: ElementRef<HTMLDivElement>
+  @ViewChild('itemFicha3', { static: true }) itemFicha3!: ElementRef<HTMLDivElement>
+  @ViewChild('itemFicha4', { static: true }) itemFicha4!: ElementRef<HTMLDivElement>
 
   constructor() {
 
   }
-  ngOnInit(): void {
-
-
-  }
+  ngOnInit(): void {}
 
 
 
   ngAfterViewInit(): void {
 
-
-    gsap.to(this.cardSection.nativeElement, {
-      x: -200,
-      duration: 2,
-      stagger: 3,
+    gsap.from(this.itemFicha1.nativeElement, {
       scrollTrigger: {
-        trigger: this.cardSection.nativeElement,
-        markers: true,
-        start: 'top top',
+        trigger: this.itemFicha1.nativeElement,
+        start: 'top 80%',
+        end: 'top 70%',
+        scrub: 1,
+
+      },
+      x: -300,
+      duration: 0.5,
+      ease: 'none',
+      opacity: 0,
+      delay: 0
+    })
+    gsap.from(this.itemFicha2.nativeElement, {
+      scrollTrigger: {
+        trigger: this.itemFicha2.nativeElement,
+        start: 'top 80%',
+        end: 'top 70%',
+        scrub: 1,
+      },
+      x: -300,
+      duration: 0.5,
+      ease: 'none',
+      opacity: 0,
+      delay: 1
+    })
+    gsap.from(this.itemFicha3.nativeElement, {
+      scrollTrigger: {
+        trigger: this.itemFicha3.nativeElement,
+        start: 'top 85%',
+        end: 'top 70%',
+        scrub: 1,
+      },
+      x: -300,
+      duration: 0.5,
+      ease: 'none',
+      opacity: 0,
+      delay: 2
+    })
+    gsap.from(this.itemFicha4.nativeElement, {
+      scrollTrigger: {
+        trigger: this.itemFicha4.nativeElement,
+        start: 'top 90%',
+        end: 'top 70%',
+        scrub: 1
+      },
+      x: -300,
+      duration: 0.5,
+      ease: 'none',
+      opacity: 0,
+      delay: 2.5
+    })
+
+
+
+
+    gsap.from(this.sectionArrow2.nativeElement, {
+      scrollTrigger: {
+        trigger: this.sectionArrow2.nativeElement,
+        start: 'top 95%',   
+        end: 'top 40%',
+        scrub: 1,
+      },
+      duration: 1.5,
+      opacity: 0,
+      y: -50,
+      stagger: 0.2,
+      delay: 1.5
+    })
+    gsap.from(this.sectionArrow1.nativeElement, {
+      scrollTrigger: {
+        trigger: this.sectionArrow1.nativeElement,
+        start: 'top 80%',   
+        end: 'top 40%',
+        scrub: 1,
+      },
+      duration: 1.5,
+      opacity: 0,
+      y: -50,
+      stagger: 0.2,
+      delay: 0.5
+    })
+
+
+
+    gsap.from(this.aboutLeft.nativeElement, {
+      scrollTrigger: {
+        trigger: this.aboutLeft.nativeElement,
+        start: 'top 80%',   
+        end: 'top 40%',
+        scrub: 1,
+      },
+      x: -400,
+      duration: 1.5,
+      ease: Expo.easeOut,
+      opacity: 0
+    })
+    gsap.from(this.aboutRight.nativeElement, {
+      scrollTrigger: {
+        trigger: this.aboutRight.nativeElement,
+        start: 'top 80%',   
+        end: 'top 40%',
+        scrub: 2,
+      },
+      x: 400,
+      duration: 2,
+      ease: Expo.easeOut,
+      opacity: 0
+    })
+
+    gsap.from(this.bigCard1.nativeElement, {
+      scrollTrigger: {
+        trigger: this.bigCard1.nativeElement,
+        start: 'top 80%',
+        end: 'top 40%',
         scrub: true
-      }
+      },
+      y: 200,
+      duration: 0.5,
+      ease: Expo.easeOut,
+      opacity: 0
+    })
+
+    gsap.from(this.bigCard2.nativeElement, {
+      scrollTrigger: {
+        trigger: this.bigCard2.nativeElement,
+        start: 'top 86%',
+        end: 'top 66%',
+        scrub: 1
+      },
+      y: 200,
+      duration: 0.5,
+      ease: Expo.easeInOut,
+      opacity: 0,
+      delay: 0.2
     })
 
 

@@ -152,6 +152,9 @@ button.btn {
     border-radius: 5px;
     color: #fff;
     font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     i {
         margin-left: 10px;
